@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px
+}
+.container{
+    width: 320px;
+    height: 480px;
+    background-color: #eee;
+    /* padding: 10px 20px; */
+    overflow: auto;
+}
+.top {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e12d2d;
+    color: #fff
+}
+.title {
+    display: inline-block;
+    width: 37%
+}
+.search {
+    display: inline-block;
+    width: 57%
+}
+
+.search .form-input input {
+    padding: 7px 15px; 
+    font-size: 13px;
+    border-radius: 7px;
+    width: 100%;
+    border: none;
+    background: #ddd
+}
+.middle{
+    padding-bottom: 40px;
+    padding-top: 10px
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.product {
+    margin: 1%;
+    width: 48%;
+    height: 140px !important;
+}
+.product .product-image {
+    height: 80%;
+}
+.product-title {
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.product-options{
+    background-color: #fff;
+    position: relative;
+}
+.add-to-cart{
+    float: right;
+    padding: 1px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #e12d2d;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    cursor: pointer;
+    color: #ddd
+}
+
+.product-price {
+    position: relative;
+    padding: 20px 5px;
+    color: #e12d2d;
+    font-weight: bold;
+    bottom: 5px;
+    left: 3px;
+}
+
+.product-detail-title {
+    padding: 5px;
+    background-color: #fff;
+    border-bottom: 1px solid #999
+}
+.product-detail-title label{
+    color: #777;
+}
+.product-detail-image{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+.product-detail-selections {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px
+}
+
+.view-product-details {
+    cursor: pointer;
+}
+
+.product-detail-selections .product-detail-price, .product-detail-selections .product-detail-variation {
+    padding: 7px 10px;
+}
+
+.product-detail-selections .product-detail-price, .product-detail-selections .product-detail-quantity{
+    width: 40%
+}
+.product-detail-selections .product-detail-variation, .product-detail-selections .product-detail-add{
+    width: 60%
+}
+
+.product-detail-selections .product-detail-add {
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.product-detail-price .new-price {
+    font-size: 20px;
+    color: #e12d2d;
+    font-weight: bold;
+}
+
+.product-detail-price .old-price, .product-detail-variation label, .product-detail-quantity{
+    color: #777;
+}
+
+.product-detail-variation select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #eee;
+    margin-top: 5px;
+}
+.product-detail-cart .product-detail-quantity {
+    padding: 0px 10px;
+}
+.product-detail-quantity .product-detail-quantity-selector{
+    border: #ddd solid 1px;
+    padding: 7px;
+}
+
+.product-detail-quantity .product-detail-quantity-selector span {
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+.product-detail-quantity .product-detail-quantity-selector .number {
+    color: #000;
+    font-size: 14px
+}
+.product-detail-cart {
+    background-color: #fff;
+    padding: 10px 0px
+}
+.product-detail-add button {
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border: #e12d2d;
+    border-radius: 4px;
+    background-color: #e12d2d;
+    color: #fff;
+    position: relative;
+    top: 6px
+}
+.product-detail .product-detail-details {
+    background-color: #fff;
+    margin: 0px;
+    padding-top: 25px
+}
+.product-detail-details nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    border-bottom: #ddd solid 1px
+}
+
+.product-detail-details nav ul li{
+    padding: 11px 1px;
+    font-size: 15px;
+    color: #777;
+    width: 32%;
+    text-align: center;
+    cursor: pointer;
+}
+.product-detail-details nav ul li.active{
+    border-bottom: solid #e12d2d 3px;
+    color: #000
+}
+.product-detail-details .content {
+    padding: 10px;
+    color: #777;
+}
+
+#cart {
+    position: absolute;
+    bottom: 10px; 
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e12d2d;
+    color: #fff;
+}
+
+#cart #count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 5px; 
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.product-cart-details table{
+    width: 100%;
+    border-collapse: collapse
+}
+
+.product-cart-details table thead{
+    background-color: #999;
+    border: none
+}
+.product-cart-details table td, .product-cart-details table th{
+    border-bottom: solid 1px #777;
+    padding: 15px;
+    margin: 0px;
+}
+
+.bottom {
+    padding: 20px 5px;
+    color: #777;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #eee
+}

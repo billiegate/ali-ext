@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preorder</title>
+        <link href="/assets/css/style.css" rel="stylesheet" media="screen">
+        <script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <div class="title home">
+                    <img src="/assets/icons/logo.png" alt="preorder-logo" width="90px" />
+                </div>
+                <div class="search">
+                    <div class="form-input">
+                        <input type="text" placeholder="search product..." id="search" />
+                    </div>
+                    <div class="result">
+                
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <!-- list of products -->
+                <div class="products" >
+                    <div class="product">
+                        <div class="product-image view-product-details">
+                            <img src="/assets/images/t14.png" width="100%" alt="image"/>
+                        </div>
+                        <div class="product-options">
+                            <div class="product-title view-product-details">this is the product title</div>
+                            <div class="">
+                                <span class="product-price">
+                                    b 100
+                                </span>
+                                <span class="add-to-cart">+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-image view-product-details">
+                            <img src="/assets/images/watch.png" width="100%" alt="image"/>
+                        </div>
+                        <div class="product-options">
+                            <div class="product-title view-product-details">this is the product title</div>
+                            <div class="" style="">
+                                <span class="product-price">
+                                    b 100
+                                </span>
+                                <span class="add-to-cart">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End list of products. -->
+
+                <!-- Start product details -->
+                <div class="product-detail" style="display: none">
+                    <div class="product-detail-title">
+                        <h4>
+                            2018 Fashion Sexy Luxury Cat Eye Sunglasses Women Coating Reflective Mirror Diamond 
+                            Decoration sun Glasses Female Shades UV400
+                        </h4>
+                        <label>SKU: 32921402471-4</label>
+                    </div>
+                    <div class="product-detail-image">
+                        <img src="/assets/images/glasses.png" alt="" width="80%">
+                    </div>
+                    <div class="product-detail-selections">
+                        <div class="product-detail-price">
+                            <span class="new-price">b 1,140</span><br>
+                            <span class="old-price"><del>b 2,840</del></span>
+                        </div>
+                        <div class="product-detail-variation">
+                            <label>Lenses Color: SILVE BLUE</label> <br>
+                            <select>
+                                    <option>Gold Gold</option>
+                                    <option>Gold Tea</option>
+                                    <option>Gold Pink</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-detail-selections product-detail-cart">
+                        <div class="product-detail-quantity">
+                            Quantity
+                            <div class="product-detail-quantity-selector">
+                                <span class="sign"> - </span>
+                                <span class="number"> 1 </span>
+                                <span class="sign"> + </span>
+                            </div>
+                        </div>
+                        <div class="product-detail-add">
+                            <button> Add to cart </button>
+                        </div>
+                    </div>
+                    <div class="product-detail-details">
+                        <nav>
+                            <ul>
+                                <li class="active"  data-for="description">Desc</li>
+                                <li data-for="specification">Specification</li>
+                                <li data-for="review">Reviews (3)</li>
+                            </ul>
+                        </nav>
+                        <div class="content">
+                            <div id="description">
+                                2018 Fashion Sexy Luxury Cat Eye Sunglasses Women Coating Reflective Mirror Diamond Decoration sun Glasses Female Shades UV400
+                            </div>
+                            <div id="specification">
+                                <ul>
+                                    <li>Your email address will not be published. Required fields are marked</li>
+                                    <li>Your email address will not be published. Required fields are marked</li>
+                                    <li>Your email address will not be published. Required fields are marked</li>
+                                </ul>
+                            </div>
+                            <div id="review">
+                                <ul>
+                                    <li>this is a nice product</li>
+                                    <li>Timely delivery</li>
+                                    <li>I will recommend this again</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end product details -->
+
+                <!-- Start cart details -->
+                <div class="product-cart-details" style="display: none">
+                    <h3><center>Order Summary</center></h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Desc</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sunglasses</td>
+                                <th>2</th>
+                                <th>b 2,280</th>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <th>2</th>
+                                <th>b 2,280</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="product-detail-selections">
+                        <div class="product-detail-price">
+                            <a href="!#">clear all</a>
+                        </div>
+                        <div class="product-detail-add">
+                            <button>
+                                checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End cart details -->
+            </div>
+            <div class="bottom">
+                &copy preorder.com.bd | 2019
+                <div id="cart">&#128722 <span id="count">0</span></div>
+            </div>
+            
+        </div>
+    </body>
+</html>
